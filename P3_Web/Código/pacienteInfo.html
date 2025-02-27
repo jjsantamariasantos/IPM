@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe paciente</title>
+    <link rel="stylesheet" href="pacienteInfo.css">
+</head>
+
+<body>
+    <div id="header">
+        <div id="nombrePaciente"></div> 
+        <a href="index.html" id="volverInicio">Otro paciente</a> 
+    </div>
+    <h1>Informe del Paciente</h1>
+
+    <!--MENU + BOTON FILTROS -->
+    <div id="filtrosContenedor">
+        <button id="filtrosMenu">Filtros</button>
+        <div id="menuDesplegable" class="oculto">
+            <div>
+                <input type="radio" id="filtroUltimoMes" name="filtro" value="ultimoMes" checked>
+                <label for="filtroUltimoMes">Último mes</label>
+            </div>
+            <div>
+                <input type="radio" id="filtroUltimosDias" name="filtro" value="ultimosDias">
+                <label for="filtroUltimosDias">Últimos N días:</label>
+                <input type="number" id="diasInput" placeholder="Ingresa días" disabled>
+            </div>
+            <div>
+                <input type="radio" id="filtroPersonalizado" name="filtro" value="personalizado">
+                <label for="filtroPersonalizado">Intervalo de fechas:</label>
+                <input type="date" id="fechaInicio" disabled>
+                <input type="date" id="fechaFin" disabled>
+            </div>
+            <button id="aplicarFiltros">Buscar</button>
+        </div>
+    </div>
+
+    <div id="medicaciones"></div>
+
+    <script src="pacienteInfo.js"></script>
+</body>
+
+</html>

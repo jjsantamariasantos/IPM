@@ -1,0 +1,156 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, rgb(210, 247, 247), rgb(198, 237, 255));
+    color: #000000;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Estilo para el título de la web */
+#tituloWeb {
+    font-size: 24px;
+    font-weight: bold;
+    color: #008a8f;
+    margin-bottom: 20px;
+}
+
+/* Contenedor para el formulario de búsqueda */
+#buscarPaciente {
+    width: 100%;
+    max-width: 500px;
+    min-width: 300px; /* Establece un ancho mínimo */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el campo de entrada del código del paciente */
+#codigoPaciente {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+}
+
+/* Estilos comunes para los botones */
+#buscarPacienteBoton,
+#cargarPacientesBoton {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #008a8f;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+/* Ajustar el estilo del botón de cargar pacientes */
+#cargarPacientesBoton {
+    min-width: 200px; /* Establece un ancho mínimo */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    overflow: hidden; /* Oculta el texto que exceda el ancho del botón */
+    text-overflow: ellipsis; /* Muestra puntos suspensivos si el texto es muy largo */
+}
+
+/* Efecto hover para los botones */
+#buscarPacienteBoton:hover,
+#cargarPacientesBoton:hover {
+    background-color: #006a6f;
+}
+
+/* Efecto focus para los botones (accesibilidad) */
+#buscarPacienteBoton:focus,
+#cargarPacientesBoton:focus {
+    outline: 2px solid #004a4f;
+    outline-offset: 2px;
+}
+
+/* Estilo para la lista de pacientes */
+#listaPacientes {
+    display: none;
+    width: 100%;
+    max-width: 500px;
+    max-height: 400px;
+    overflow-y: auto; /* Permite scroll vertical si la lista es muy larga */
+    background-color: #ffffff;
+    border-radius: 5px;
+    list-style-type: none;
+    padding: 10px;
+    margin-top: 20px;
+    box-sizing: border-box; /* Incluye padding en el ancho total */
+}
+
+/* Estilo para cada elemento de la lista de pacientes */
+.paciente {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+}
+
+/* Estilo para el nombre del paciente */
+.paciente .nombre {
+    flex-grow: 1;
+    text-align: left;
+}
+
+/* Estilo para el código del paciente */
+.paciente .codigo {
+    text-align: right;
+}
+
+/* Clase de utilidad para ocultar elementos visualmente pero mantenerlos accesibles para lectores de pantalla */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* Media queries para responsividad en dispositivos móviles */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    #buscarPaciente,
+    #listaPacientes,
+    #cargarPacientesBoton {
+        min-width: unset; /* Elimina el ancho mínimo en dispositivos móviles */
+        width: 100%;
+    }
+
+    #buscarPaciente {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #codigoPaciente,
+    #buscarPacienteBoton {
+        width: 100%; /* En móviles, los elementos ocupan todo el ancho */
+    }
+}

@@ -1,0 +1,277 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, rgb(230, 247, 247), rgb(210, 241, 255));
+    color: black;
+    margin: 0;
+    padding: 5vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#header {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#nombrePaciente {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #008a8f;
+}
+
+a {
+    text-decoration: underline;
+    color: #008a8f;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #005f63;
+    font-weight: bold;
+}
+
+#filtrosContenedor {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+#filtrosMenu {
+    margin-right: 15px;
+    padding: 10px 20px;
+    background-color: #008a8f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#filtrosMenu:hover {
+    background-color: #005f63;
+}
+
+#menuDesplegable {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 100%;
+    max-width: 250px;
+    display: none;
+    z-index: 100;
+}
+
+#menuDesplegable.oculto {
+    display: none;
+}
+
+#menuDesplegable.visible {
+    display: block;
+}
+
+#menuDesplegable input[type="number"] {
+    width: 60px;
+    margin-left: 5px;
+}
+
+#menuDesplegable input[type="date"] {
+    margin-top: 5px;
+    width: 100%;
+}
+
+#menuDesplegable label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+#menuDesplegable div {
+    margin-bottom: 10px;
+}
+
+#menuDesplegable button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #008a8f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+#menuDesplegable button:hover {
+    background-color: #005f63;
+}
+
+#medicaciones {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 0;
+    box-shadow: none;
+    transition: none;
+    width: 100%;
+    max-width: 1200px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 15px;
+}
+
+ul li div {
+    background-color: #ffffff;
+    border: 2px solid #a4b1b4;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+ul li div:hover {
+    border: 2px solid #6ca8b6;
+    color: black;
+}
+
+ul ul {
+    margin-left: 20px;
+}
+
+ul ul li {
+    margin-bottom: 10px;
+}
+
+ul ul li.toma-realizada {
+    background-color: #ace2b9;
+    border: 2px solid #07bb31;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+ul ul li.toma-realizada:hover {
+    background-color: white;
+    border: 2px solid #00df34e7;
+    color: black;
+}
+
+ul ul li.toma-pendiente {
+    background-color: #f8d7da;
+    border: 2px solid #dc3545;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+ul ul li.toma-pendiente:hover {
+    background-color: white;
+    border: 2px solid #dc3545;
+    color: black;
+}
+
+ul ul li.toma-tarde {
+    background-color: #ffe0b2;
+    border: 2px solid #ffa000;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+ul ul li.toma-tarde:hover {
+    background-color: white;
+    border: 2px solid #ff8f00;
+    color: black;
+}
+
+#fechaInicio, #fechaFin {
+    margin-top: 5px;
+    width: 100%;
+}
+
+#filtrosMenu:focus,
+#menuDesplegable input:focus,
+#menuDesplegable button:focus {
+    outline: 2px solid #008a8f;
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #menuDesplegable {
+        transition: none;
+    }
+}
+
+/* Media queries para responsividad */
+@media (max-width: 767px) {
+    body {
+        padding: 3vw;
+    }
+
+    #nombrePaciente {
+        font-size: 1.5rem;
+    }
+
+    #header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #volverInicio {
+        margin-top: 10px;
+    }
+
+    #filtrosMenu {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    #menuDesplegable {
+        width: 100%;
+        max-width: none;
+    }
+
+    ul ul {
+        margin-left: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        padding: 5vw;
+    }
+
+    #nombrePaciente {
+        font-size: 1.75rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    body {
+        padding: 5vw;
+    }
+
+    #nombrePaciente {
+        font-size: 2rem;
+    }
+}

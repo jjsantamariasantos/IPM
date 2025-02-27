@@ -1,0 +1,191 @@
+# Spanish translations for ipm package.
+# Copyright (C) 2024 THE ipm'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the ipm package.
+#  <lero@laptop-pbh4aj3v.>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ipm 2425-p_escritorio-red-hot-chili-peppers-"
+"practicaEntregable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-03 15:26+0100\n"
+"PO-Revision-Date: 2024-11-03 15:30+0100\n"
+"Last-Translator:  <lero@laptop-pbh4aj3v.>\n"
+"Language-Team: Spanish <es@tp.org.es>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: text.py:18
+msgid "Error:"
+msgstr "Error:"
+
+#: text.py:19
+msgid "Error de conexión:"
+msgstr "Error de conexión:"
+
+#: text.py:20
+msgid "No se pudo conectar con el servidor. Verifique su conexión."
+msgstr "No se pudo conectar con el servidor. Verifique su conexión."
+
+#: text.py:24
+msgid "Su codigo no se encuentra en la base de datos."
+msgstr "Su codigo no se encuentra en la base de datos."
+
+#: text.py:25
+msgid "No se puede añadir una medicación. Datos invalidos"
+msgstr "No se puede añadir una medicación. Datos invalidos"
+
+#: text.py:26
+msgid "No se pudo modificar una medicación. Datos invalidos"
+msgstr "No se pudo modificar una medicación. Datos invalidos"
+
+#: text.py:27
+msgid "No se puede añadir una nueva Posología. Datos invalidos"
+msgstr "No se puede añadir una nueva Posología. Datos invalidos"
+
+#: text.py:28
+msgid "No se pudo modificar una Posología. Datos invalidos"
+msgstr "No se pudo modificar una Posología. Datos invalidos"
+
+#: text.py:29
+msgid "No se pudo eliminar una Posología."
+msgstr "No se pudo eliminar una Posología."
+
+#: text.py:30
+msgid "Paciente no Encontrado"
+msgstr "Paciente no Encontrado"
+
+#: text.py:31
+msgid "No se pudo eliminar una medicación."
+msgstr "No se pudo eliminar una medicación."
+
+#: text.py:35
+msgid "Cargando..."
+msgstr "Cargando..."
+
+#: text.py:36
+msgid "Cargando, por favor espere..."
+msgstr "Cargando, por favor espere..."
+
+#: text.py:37
+msgid "Cambiar tema"
+msgstr "Cambiar tema"
+
+#: text.py:38
+msgid "Información"
+msgstr "Información"
+
+#: text.py:39
+msgid "Ingrese el codigo del paciente"
+msgstr "Ingrese el codigo del paciente"
+
+#: text.py:40
+msgid "Buscar Paciente"
+msgstr "Buscar Paciente"
+
+#: text.py:41
+msgid "Lista de Pacientes Registrados:"
+msgstr "Lista de Pacientes Registrados:"
+
+#: text.py:42
+msgid "Atras"
+msgstr "Atras"
+
+#: text.py:43
+msgid "Codigo:"
+msgstr "Codigo:"
+
+#: text.py:44
+msgid "Nombre:"
+msgstr "Nombre:"
+
+#: text.py:45
+msgid "Agregar"
+msgstr "Agregar"
+
+#: text.py:46
+msgid "Añadir"
+msgstr "Añadir"
+
+#: text.py:47
+msgid "Dosis: %(dosage)s mg, Duración: %(treat_duration)s dias"
+msgstr "Dosis: %(dosage)s mg, Duración: %(treat_duration)s dias"
+
+#: text.py:48
+msgid "Fecha de inicio del tratamiento: %(Start_date)s"
+msgstr "Fecha de inicio del tratamiento: %(Start_date)s"
+
+#: text.py:49
+msgid "Posología %(index)d: %(hour)02d:%(minute)02d"
+msgstr "Posología %(index)d: %(hour)02d:%(minute)02d"
+
+#: text.py:50
+msgid "No hay información disponible"
+msgstr "No hay información disponible"
+
+#: text.py:51
+msgid "Cancelar"
+msgstr "Cancelar"
+
+#: text.py:52
+msgid "Guardar"
+msgstr "Guardar"
+
+#: text.py:53
+msgid "Hora (00-23):"
+msgstr "Hora (00-23):"
+
+#: text.py:54
+msgid "Min (00-59):"
+msgstr "Min (00-59):"
+
+#: text.py:55
+msgid "Nombre del medicamento"
+msgstr "Nombre del medicamento"
+
+#: text.py:56
+msgid "Dosis mg"
+msgstr "Dosis mg"
+
+#: text.py:57
+msgid "Fecha de inicio"
+msgstr "Fecha de inicio"
+
+#: text.py:58
+msgid "Duracion del tratamiento"
+msgstr "Duracion del tratamiento"
+
+#: text.py:59
+msgid "Duracion del tratamiento (días)"
+msgstr "Duracion del tratamiento (días)"
+
+#: text.py:60
+msgid "Modificar la Posología"
+msgstr "Modificar la Posología"
+
+#: text.py:61
+msgid "No hay información de posología disponible"
+msgstr "No hay información de posología disponible"
+
+#: text.py:62
+msgid "Datos del Paciente"
+msgstr "Datos del Paciente"
+
+#: text.py:63
+msgid "Apellido"
+msgstr "Apellido"
+
+#: text.py:64
+msgid "Posología"
+msgstr "Posología"
+
+#: text.py:65
+msgid "Modificar la medicación"
+msgstr "Modificar la medicación"
+
+#: text.py:66
+msgid "Medicación"
+msgstr "Medicación"
